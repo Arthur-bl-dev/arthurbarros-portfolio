@@ -1,23 +1,19 @@
-import type { NextPage } from 'next'
-//Components
 import CEO from '../components/ceo'
-import Iam from '../components/Iam'
+import ForkMe from '../components/forkme'
+import MyPortfolio from '../components/myPortfolio'
 import SocialMedia from '../components/socialMedia'
-//Layouts
 import Main from '../layouts/main'
+import Iam from './../components/iam'
 
-
-
-
-
-
-
+import type { NextPage } from 'next'
 const Home: NextPage = () => {
   return (
     <Main>
       <CEO />
+      <ForkMe />
       <SocialMedia />
       <Iam />
+      <MyPortfolio />
     </Main>
   )
 }

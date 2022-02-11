@@ -1,9 +1,8 @@
 import { NextPage } from 'next';
 import { useRef } from 'react';
 import Lottie from 'react-lottie';
-import * as animationData from './../public/animations/modern.json';
+import * as animationData from '../public/animations/modern.json';
 import styles from './../styles/iam.module.scss';
-
 
 
 const Iam: NextPage = () => {

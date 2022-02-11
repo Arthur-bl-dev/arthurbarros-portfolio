@@ -58,24 +58,68 @@ a {
   }
 }
 
+.github-corner{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}
+
 @media (min-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 }
+
 @media (min-width: 480px) {
   /* smartphones, Android phones, landscape iPhone */
 }
+
 @media (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
+
 @media (min-width: 801px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
+
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
 }
+
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
 }
+
 @media (min-width: 1440px) {
   /* big landscape tablets, laptops, and desktops */
 }
