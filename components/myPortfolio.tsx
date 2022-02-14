@@ -1,10 +1,11 @@
 import Image from 'next/image'
-import { url } from 'inspector'
 import { NextPage } from 'next'
 import { useCallback, useRef } from 'react'
 
 import styles from './../styles/myPortFolio.module.scss'
-import BackgroundTextContent from './backgroundTextContent'
+
+//import { url } from 'inspector'
+//import BackgroundTextContent from './backgroundTextContent'
 
 const MyPortfolio: NextPage = () => {
 

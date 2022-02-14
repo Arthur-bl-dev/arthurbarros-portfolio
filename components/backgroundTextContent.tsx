@@ -1,8 +1,14 @@
+import { NextPage } from 'next'
 import { useEffect, useRef } from 'react'
 
 import styles from './../styles/backgroundTextContent.module.scss'
 
-const BackgroundTextContent = (position: any, title: any) => {
+interface Props {
+    position: string;
+    title: string;
+}
+
+const BackgroundTextContent: NextPage<Props> = (position, title) => {
 
     //const positionTitle = useRef(position);
 

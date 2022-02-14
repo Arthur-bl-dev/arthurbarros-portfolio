@@ -1,7 +1,11 @@
-import type { NextPage } from 'next';
-import styles from './../styles/layouts/main.module.scss';
+import styles from './../styles/layouts/main.module.scss'
 
-const Main: NextPage = ({ children }) => {
+import type { NextPage } from 'next';
+interface Props {
+    children: JSX.Element|JSX.Element[];
+}
+
+const Main: NextPage<Props> = ({ children }) => {
 
     return (
         <>
