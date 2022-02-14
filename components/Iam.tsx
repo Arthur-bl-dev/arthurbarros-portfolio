@@ -1,9 +1,9 @@
-import { NextPage } from 'next';
-import { useRef } from 'react';
-import Lottie from 'react-lottie';
-import * as animationData from '../public/animations/modern.json';
-import styles from './../styles/iam.module.scss';
+import Lottie from 'react-lottie'
+import { NextPage } from 'next'
+import { useRef } from 'react'
 
+import * as animationData from '../public/animations/modern.json'
+import styles from './../styles/iam.module.scss'
 
 const Iam: NextPage = () => {
 
@@ -21,7 +21,6 @@ const Iam: NextPage = () => {
             <section className={styles.content}>
                 <div className={styles.left}>
                     <h4>Hi,</h4>
-                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                     <h1>I’m Arthur,</h1>
                     <h1>front end developer</h1>
                     <p>Creative and self-starting Front-End Developer with 3 years experience building stable websites and apps, collaborative environments.</p>
