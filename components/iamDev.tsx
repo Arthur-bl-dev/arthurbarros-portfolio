@@ -1,20 +1,20 @@
+import Lottie from 'react-lottie'
 import { NextPage } from 'next'
 import { useRef } from 'react'
 
+import * as animationData from '../public/animations/modern.json'
 import styles from './../styles/iamDev.module.scss'
 
-// import Lottie from 'react-lottie'
-// import * as animationData from '../public/animations/modern.json'
 const IamDev: NextPage = () => {
 
-    // const defaultOptions = useRef({
-    //     loop: true,
-    //     autoplay: true,
-    //     animationData: animationData,
-    //     rendererSettings: {
-    //         preserveAspectRatio: 'xMidYMid slice'
-    //     },
-    // });
+    const defaultOptions = useRef({
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        },
+    });
 
     return (
         <>
@@ -28,13 +28,13 @@ const IamDev: NextPage = () => {
                 </div>
 
                 <div className={styles.right}>
-                    {/* <Lottie
+                    <Lottie
                         options={defaultOptions.current}
                         height={'25rem'}
                         width={'25rem'}
                         isClickToPauseDisabled={true}
                         speed={0.35}
-                    /> */}
+                    />
                 </div>
             </section>
         </>
