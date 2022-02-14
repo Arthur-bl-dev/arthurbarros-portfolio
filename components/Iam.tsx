@@ -1,11 +1,11 @@
 import Lottie from 'react-lottie'
-import { NextPage } from 'next'
 import { useRef } from 'react'
 
 import * as animationData from '../public/animations/modern.json'
 import styles from './../styles/iam.module.scss'
 
-const Iam: NextPage = () => {
+//import { NextPage } from 'next'
+const Iam = () => {
 
     const defaultOptions = useRef({
         loop: true,
