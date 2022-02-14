@@ -5,8 +5,7 @@ import MyPortfolio from '../components/myPortfolio'
 import SocialMedia from '../components/socialMedia'
 import Main from '../layouts/main'
 
-import type { NextPage } from 'next'
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <Main>
       <CEO />
