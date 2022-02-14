@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 
 import CEO from '../components/ceo'
 import ForkMe from '../components/forkme'
-import Iam from '../components/iam'
+import IamDev from '../components/iamDev'
 import MyPortfolio from '../components/myPortfolio'
 import SocialMedia from '../components/socialMedia'
 import Main from '../layouts/main'
@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       <CEO />
       <ForkMe />
       <SocialMedia />
-      <Iam />
+      <IamDev />
       <MyPortfolio />
     </Main>
   )

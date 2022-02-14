@@ -1,11 +1,11 @@
 import { NextPage } from 'next'
 import { useRef } from 'react'
 
-import styles from './../styles/iam.module.scss'
+import styles from './../styles/iamDev.module.scss'
 
 // import Lottie from 'react-lottie'
 // import * as animationData from '../public/animations/modern.json'
-const Iam: NextPage = () => {
+const IamDev: NextPage = () => {
 
     // const defaultOptions = useRef({
     //     loop: true,
@@ -41,4 +41,4 @@ const Iam: NextPage = () => {
     )
 }
 
-export default Iam;
+export default IamDev;
