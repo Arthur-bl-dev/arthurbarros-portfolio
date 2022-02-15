@@ -23,7 +23,7 @@ const IamDev: NextPage = () => {
                     <h4>Hi,</h4>
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
                     <h1>I’m Arthur,</h1>
-                    <h1>front end developer</h1>
+                    <h1>Front-end developer</h1>
                     <p>Creative and self-starting Front-End Developer with 3 years experience building stable websites and apps, collaborative environments.</p>
                 </div>
 

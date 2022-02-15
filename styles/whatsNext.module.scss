@@ -1,0 +1,36 @@
+.contentWhatsNext {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    z-index: 3;
+    padding: 0 .5rem;
+
+    margin: 10rem 0;
+
+    h4 {
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: #fff;
+        opacity: 60%;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 3.5rem;
+        line-height: 100%;
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+        opacity: 60%;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+}

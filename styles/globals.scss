@@ -6,8 +6,9 @@
 
 :root {
   --bg-color: #1e1f23;
-  --primary-color: #1A5CFF;
-  --secondary-color: #FFAF31;
+  --primary-color: #FFAF31;
+  --primary-color-700: #fac267;
+  --primary-color-500: #fad9a4;
 
   --secodary-text-color: #18191C;
 
@@ -29,6 +30,7 @@ button {
 }
 
 //font-family: 'Calibre';
+//font-family: 'SFMono', sans-serif;
 button {
   cursor: pointer;
 }

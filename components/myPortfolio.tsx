@@ -3,10 +3,9 @@ import { NextPage } from 'next'
 import { useCallback, useRef } from 'react'
 
 import styles from './../styles/myPortFolio.module.scss'
+import BackgroundTextContent from './backgroundTextContent'
 
 //import { url } from 'inspector'
-
-import BackgroundTextContent from './backgroundTextContent'
 
 const MyPortfolio: NextPage = () => {
 
@@ -41,6 +40,10 @@ const MyPortfolio: NextPage = () => {
         },
         {
             name: 'Project 8',
+            image: 'https://via.placeholder.com/350x350/18191c/9c9e9e.jpeg?text=Under+construction',
+        },
+        {
+            name: 'Project 9',
             image: 'https://via.placeholder.com/350x350/18191c/9c9e9e.jpeg?text=Under+construction',
         },
     ])

@@ -32,12 +32,13 @@
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
+  .content {
+    max-width: 1140px;
+    padding: 0;
+  }
 }
 @media (min-width: 1440px) {
   /* big landscape tablets, laptops, and desktops */
 
-  .content {
-    max-width: 1370px;
-    padding: 0;
-  }
+
 }

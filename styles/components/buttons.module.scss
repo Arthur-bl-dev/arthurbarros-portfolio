@@ -1,0 +1,28 @@
+.primary {
+    padding: 0 2rem;
+    line-height: 3rem;
+    border: none;
+    border-radius: 0;
+    background-color: var(--primary-color);
+    color: var(--secodary-text-color);
+    transition: filter .2s ease-in-out, outline .2s ease-in-out, border .2s ease-in-out;
+    font-size: 1rem;
+    border: solid 1px transparent;
+    font-family: 'SFMono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    &:hover {
+        filter: brightness(90%);
+    }
+
+    &:focus {
+        border: solid 1px var(--primary-color-700);
+        outline: solid 0.23rem var(--primary-color-500);
+
+    }
+
+
+}

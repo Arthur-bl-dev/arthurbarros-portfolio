@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100vh;
+  z-index: 3;
 }
 
 .left {
@@ -21,8 +22,8 @@
   }
 
   h1 {
-    font-weight: 700;
-    font-size: 5rem;
+    font-weight: 600;
+            font-size: 3.5rem;
     line-height: 100%;
     color: #fff;
   }
