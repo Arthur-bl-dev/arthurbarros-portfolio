@@ -11,7 +11,15 @@ const WhatsNext: NextPage = () => {
                 <h1>Get In Touch</h1>
                 {/* eslint-disable react/no-unescaped-entities */}
                 <p>My inbox is always open. If you have a work offer or just want to say hi, I'll try my best to get back to you.</p>
-                <button className={buttons.primary}>Say Hello</button>
+
+                <button
+                    type='button'
+                    onClick={() => {
+                        if (typeof window !== 'undefined') {
+                            window.open('mailto:arthurbldev@gmail.com', '_blank', 'noopener noreferrer')
+                        }
+                    }} className={buttons.primary}>Say Hello</button>
+
             </section>
         </>
     )
