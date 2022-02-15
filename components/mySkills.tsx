@@ -34,8 +34,16 @@ const MySkills: NextPage = () => {
                         breakpoints={
                             {
                                 // when window width is >= 600px
+                                300: {
+                                    slidesPerView: 1.85,
+                                    spaceBetween: 10
+                                },
+                                350: {
+                                    slidesPerView: 2.15,
+                                    spaceBetween: 10
+                                },
                                 400: {
-                                    slidesPerView: 3,
+                                    slidesPerView: 2.5,
                                     spaceBetween: 10
                                 },
                                 // when window width is >= 600px
