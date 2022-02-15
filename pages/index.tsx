@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 
+import AboutMe from '../components/aboutMe'
 import CEO from '../components/ceo'
 import ForkMe from '../components/forkme'
 import IamDev from '../components/iamDev'
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <SocialMedia />
       <IamDev />
       <MyPortfolio />
+      <AboutMe/>
     </Main>
   )
 }

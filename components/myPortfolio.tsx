@@ -5,42 +5,43 @@ import { useCallback, useRef } from 'react'
 import styles from './../styles/myPortFolio.module.scss'
 
 //import { url } from 'inspector'
-//import BackgroundTextContent from './backgroundTextContent'
+
+import BackgroundTextContent from './backgroundTextContent'
 
 const MyPortfolio: NextPage = () => {
 
     const listProjects = useRef([
         {
             name: 'Project 1',
-            image: 'https://via.placeholder.com/350',
+            image: 'https://via.placeholder.com/350x350/18191c/9c9e9e.jpeg?text=Under+construction',
         },
         {
             name: 'Project 2',
-            image: 'https://via.placeholder.com/350',
+            image: 'https://via.placeholder.com/350x350/18191c/9c9e9e.jpeg?text=Under+construction',
         },
         {
             name: 'Project 3',
-            image: 'https://via.placeholder.com/350',
+            image: 'https://via.placeholder.com/350x350/18191c/9c9e9e.jpeg?text=Under+construction',
         },
         {
             name: 'Project 4',
-            image: 'https://via.placeholder.com/350',
+            image: 'https://via.placeholder.com/350x350/18191c/9c9e9e.jpeg?text=Under+construction',
         },
         {
             name: 'Project 5',
-            image: 'https://via.placeholder.com/350',
+            image: 'https://via.placeholder.com/350x350/18191c/9c9e9e.jpeg?text=Under+construction',
         },
         {
             name: 'Project 6',
-            image: 'https://via.placeholder.com/350',
+            image: 'https://via.placeholder.com/350x350/18191c/9c9e9e.jpeg?text=Under+construction',
         },
         {
             name: 'Project 7',
-            image: 'https://via.placeholder.com/350',
+            image: 'https://via.placeholder.com/350x350/18191c/9c9e9e.jpeg?text=Under+construction',
         },
         {
             name: 'Project 8',
-            image: 'https://via.placeholder.com/350',
+            image: 'https://via.placeholder.com/350x350/18191c/9c9e9e.jpeg?text=Under+construction',
         },
     ])
 
@@ -67,7 +68,7 @@ const MyPortfolio: NextPage = () => {
     return (
         <>
             <section className={styles.content}>
-                {/* <BackgroundTextContent  /> */}
+                <BackgroundTextContent position="top right" title="Work" />
                 <header>
                     <h1>My Portfolio</h1>
                     <p>A small part of projects I developed chosen by me.</p>

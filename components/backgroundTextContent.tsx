@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import { useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 
 import styles from './../styles/backgroundTextContent.module.scss'
 
@@ -8,36 +8,40 @@ interface Props {
     title: string;
 }
 
-const BackgroundTextContent: NextPage<Props> = (position, title) => {
+const BackgroundTextContent: NextPage<Props> = ({ position, title }) => {
 
-    //const positionTitle = useRef(position);
 
-    // useEffect(() => {
+    const RenderTitle = useCallback(() => {
 
-    //     switch (position) {
-    //         case 'top left':
-    //             positionTitle.current = styles.topLeft
-    //             break;
-    //         case 'bottom right':
-    //             positionTitle.current = styles.bottomRight;
-    //             break;
-    //         case 'bottom left':
-    //             positionTitle.current = styles.bottomLeft;
-    //             break;
-    //         default:
-    //             positionTitle.current = styles.topRight
-    //             break;
-    //     }
+        let classTitle = ''
 
-    // }, [position]);
+        switch (position) {
+            case 'top left':
+                classTitle = styles.topLeft
+                break;
+            case 'bottom right':
+                classTitle = styles.bottomRight;
+                break;
+            case 'bottom left':
+                classTitle = styles.bottomLeft;
+                break;
+            case 'top right':
+                classTitle = styles.topRight
+                break;
+            default:
+                break;
+        }
 
-    return (
-        <>
-            <section>
-                <h1 className={`${position}`}>{title}</h1>
-            </section>
-        </>
-    )
+        return (
+            <section className={`${styles.contentBackgroundText} ${classTitle}`}>
+                <h1 >{title}</h1>
+            </section >
+
+        )
+
+    }, [position, title])
+
+    return <RenderTitle />
 }
 
 export default BackgroundTextContent;

@@ -1,0 +1,42 @@
+.contentAboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+    height: 50rem;
+}
+
+.left {
+    flex: 1;
+
+    h1 {
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 100%;
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+        opacity: 60%;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.contentAnimationPhoto {
+    position: absolute;
+    right: 0rem;
+    bottom: 2rem;
+}
