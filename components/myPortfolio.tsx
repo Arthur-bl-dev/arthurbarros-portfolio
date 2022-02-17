@@ -20,90 +20,82 @@ interface PropsHeader {
     }[];
 }
 
+const listProjects: ImagesListType = [
+    {
+        src: '/images/projects/SuperGeeks.png',
+        loading: 'lazy',
+        alt: 'LandingPage for a company called SuperGeeks, a company that provides a platform for childrens,youngs and adults to learn about the latest technologies and trends in the industry.',
+        width: 1920,
+        height: 2916
+    },
+    {
+        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+        loading: 'lazy',
+        alt: 'Under Construction',
+        height: 2916
+    },
+    {
+        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+        loading: 'lazy',
+        alt: 'Under Construction',
+        width: 1920,
+        height: 2916
+    },
+    {
+        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+        loading: 'lazy',
+        alt: 'Under Construction',
+        width: 1920,
+        height: 2916
+    },
+    {
+        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+        loading: 'lazy',
+        alt: 'Under Construction',
+        width: 1920,
+        height: 2916
+    },
+    {
+        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+        loading: 'lazy',
+        alt: 'Under Construction',
+        width: 1920,
+        height: 2916
+    },
+    {
+        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+        loading: 'lazy',
+        alt: 'Under Construction',
+        width: 1920,
+        height: 2916
+    },
+    {
+        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+        loading: 'lazy',
+        alt: 'Under Construction',
+        width: 1920,
+        height: 2916
+    },
+    {
+        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+        loading: 'lazy',
+        alt: 'Under Construction',
+        width: 1920,
+        height: 2916
+    },
+]
+
 const MyPortfolio: NextPage = () => {
     const [currentImageIndex, setCurrentIndex] = useState(-1);
     const [isOpen, setIsOpen] = useState(false);
 
-    const listProjects = useRef([
-        {
-            src: '/images/projects/SuperGeeks.png',
-            loading: 'lazy',
-            alt: 'Supergeeks',
-            caption: "LandingPage for a company called SuperGeeks, a company that provides a platform for childrens,youngs and adults to learn about the latest technologies and trends in the industry.",
-            width: 1920,
-            height: 2916
-        },
-        {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-            loading: 'lazy',
-            alt: 'Under Construction',
-            caption: "...",
-            width: 1920,
-            height: 2916
-        },
-        {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-            loading: 'lazy',
-            alt: 'Under Construction',
-            caption: "...",
-            width: 1920,
-            height: 2916
-        },
-        {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-            loading: 'lazy',
-            alt: 'Under Construction',
-            caption: "...",
-            width: 1920,
-            height: 2916
-        },
-        {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-            loading: 'lazy',
-            alt: 'Under Construction',
-            caption: "...",
-            width: 1920,
-            height: 2916
-        },
-        {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-            loading: 'lazy',
-            alt: 'Under Construction',
-            caption: "...",
-            width: 1920,
-            height: 2916
-        },
-        {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-            loading: 'lazy',
-            alt: 'Under Construction',
-            caption: "...",
-            width: 1920,
-            height: 2916
-        },
-        {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-            loading: 'lazy',
-            alt: 'Under Construction',
-            caption: "...",
-            width: 1920,
-            height: 2916
-        },
-        {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-            loading: 'lazy',
-            alt: 'Under Construction',
-            caption: "...",
-            width: 1920,
-            height: 2916
-        },
-    ])
+
 
     const RenderProjects = useCallback(() => (
 
         <>
             {
-                listProjects.current.map((project, index) => (
+                listProjects.map((project, index) => (
                     <div onClick={() => {
                         setCurrentIndex(index);
                         setIsOpen(true);
@@ -127,21 +119,21 @@ const MyPortfolio: NextPage = () => {
     }, [currentImageIndex]);
 
     const gotoNext = useCallback(() => {
-        currentImageIndex + 1 < listProjects.current.length && setCurrentIndex(currentImageIndex + 1)
+        currentImageIndex + 1 < listProjects.length && setCurrentIndex(currentImageIndex + 1)
     }, [currentImageIndex]);
 
     const Header: NextPage = useCallback(() => {
-        let data = listProjects.current[currentImageIndex]
+        let data = listProjects[currentImageIndex]
 
         return (
             <header className={styles.header}>
                 <div className={styles.headerContent}>
 
                     <div className={styles.contentTitle}>
-                        <h1>{data.alt}</h1>
+                        <p>{data.alt}</p>
                         <button title="Close Modal" onClick={() => setIsOpen(false)}><Icon color='#fff' width={25} icon="fa:close" /></button>
                     </div>
-                    <p>{data.caption}</p>
+
                 </div>
             </header>
         )
@@ -166,7 +158,7 @@ const MyPortfolio: NextPage = () => {
                     isOpen={isOpen}
                     onPrev={gotoPrevious}
                     onNext={gotoNext}
-                    images={listProjects.current}
+                    images={listProjects}
                     singleClickToZoom
                     currentIndex={currentImageIndex}
                     onClose={() => setIsOpen(false)}
