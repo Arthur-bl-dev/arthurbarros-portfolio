@@ -10,6 +10,49 @@ import styles from './../styles/mySkills.module.scss'
 
 // Import Swiper styles
 const MySkills: NextPage = () => {
+
+    const options = {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        breakpoints: {
+            // when window width is >= 600px
+            300: {
+                slidesPerView: 1.85,
+                spaceBetween: 10
+            },
+            350: {
+                slidesPerView: 2.15,
+                spaceBetween: 10
+            },
+            400: {
+                slidesPerView: 2.5,
+                spaceBetween: 10
+            },
+            // when window width is >= 600px
+            600: {
+                slidesPerView: 3.75,
+                spaceBetween: 0
+            },
+            // when window width is >= 801px
+            801: {
+                slidesPerView: 4.15,
+                spaceBetween: 0
+            },
+            // when window width is >= 801px
+            1125: {
+                slidesPerView: 4.5,
+                spaceBetween: 0
+            },
+            // when window width is >= 1440px
+            1440: {
+                slidesPerView: 5.65,
+                spaceBetween: 0
+            }
+        },
+        breakpointsbase: 'container',
+        allowTouchMove: false,
+    }
+
     return (
         <>
             <section className={styles.contentMySkills}>
@@ -21,55 +64,14 @@ const MySkills: NextPage = () => {
                 <div className={styles.contentListSkills}>
                     <Swiper
                         modules={[Autoplay]}
-                        spaceBetween={0}
-                        slidesPerView={5}
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
                         effect="creative"
                         autoplay={{
                             delay: 2500,
                             disableOnInteraction: true,
-
                         }}
-                        breakpoints={
-                            {
-                                // when window width is >= 600px
-                                300: {
-                                    slidesPerView: 1.85,
-                                    spaceBetween: 10
-                                },
-                                350: {
-                                    slidesPerView: 2.15,
-                                    spaceBetween: 10
-                                },
-                                400: {
-                                    slidesPerView: 2.5,
-                                    spaceBetween: 10
-                                },
-                                // when window width is >= 600px
-                                600: {
-                                    slidesPerView: 3.75,
-                                    spaceBetween: 0
-                                },
-                                // when window width is >= 801px
-                                801: {
-                                    slidesPerView: 4.15,
-                                    spaceBetween: 0
-                                },
-                                // when window width is >= 801px
-                                1125: {
-                                    slidesPerView: 4.5,
-                                    spaceBetween: 0
-                                },
-                                // when window width is >= 1440px
-                                1440: {
-                                    slidesPerView: 5.65,
-                                    spaceBetween: 0
-                                }
-                            }
-                        }
-                        breakpointsBase="container"
-                        allowTouchMove={false}
+                        {...options}
                     >
                         <SwiperSlide>
                             <div className={styles.contentListSkillsItem}>
