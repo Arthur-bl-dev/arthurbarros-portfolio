@@ -8,6 +8,7 @@ import * as animationData from '../public/animations/geometric_loop_background.j
 import styles from './../styles/aboutMe.module.scss'
 import buttons from './../styles/components/buttons.module.scss'
 import BackgroundTextContent from './backgroundTextContent'
+import Link from 'next/link'
 
 const AboutMe: NextPage = () => {
 
@@ -52,7 +53,14 @@ const AboutMe: NextPage = () => {
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
                     </p>
 
-                    <button className={buttons.primary}>Download CV <Icon color='#1e1f23' icon="akar-icons:download" /></button>
+                    <Link href='https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/74fd33ce-546c-4790-8149-b73fbfd6987c?view=html' passHref >
+                        <a
+                            title='Download CV'
+                            target='_blank' rel="noreferrer" >
+                            <button className={buttons.primary}>Download CV <Icon color='#1e1f23' icon="akar-icons:download" /></button>
+                        </a>
+                    </Link>
+
                 </div>
                 <BackgroundTextContent position="top right" title="I’m" />
             </section>

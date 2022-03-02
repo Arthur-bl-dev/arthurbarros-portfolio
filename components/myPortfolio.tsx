@@ -22,24 +22,25 @@ interface PropsHeader {
 
 const listProjects: ImagesListType = [
     {
+        src: '/images/projects/LP_Example_1.png',
+        loading: 'lazy',
+        alt: 'Prototype of a website for a company.',
+        width: 1440,
+        height: 1024
+    },
+    {
         src: '/images/projects/SuperGeeks.png',
         loading: 'lazy',
-        alt: 'LandingPage for a company called SuperGeeks, a company that provides a platform for childrens,youngs and adults to learn about the latest technologies and trends in the industry.',
+        alt: 'SuperGeeks - a company that provides a platform for childrens,youngs and adults to learn about the latest technologies and trends in the industry.',
         width: 1920,
         height: 2916
     },
     {
-        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+        src: '/images/projects/Franquias_SuperGeeks.png',
         loading: 'lazy',
-        alt: 'Under Construction',
-        height: 2916
-    },
-    {
-        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-        loading: 'lazy',
-        alt: 'Under Construction',
+        alt: 'SuperGeeks - This time a static page for your trade networks of franchise',
         width: 1920,
-        height: 2916
+        height: 5292
     },
     {
         src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
