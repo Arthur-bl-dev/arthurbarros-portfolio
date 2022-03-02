@@ -23,7 +23,7 @@
 
   h1 {
     font-weight: 600;
-            font-size: 3.5rem;
+    font-size: 3.5rem;
     line-height: 100%;
     color: #fff;
   }
@@ -45,27 +45,41 @@
   justify-content: center;
 }
 
+.canvas {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
 @media (min-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 }
+
 @media (min-width: 480px) {
   /* smartphones, Android phones, landscape iPhone */
 }
+
 @media (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
+
 @media (min-width: 801px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
+
 @media (min-width: 1025px) {
+
   /* big landscape tablets, laptops, and desktops */
   .content {
     flex-direction: row;
   }
 }
+
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
 }
+
 @media (min-width: 1440px) {
   /* big landscape tablets, laptops, and desktops */
 }

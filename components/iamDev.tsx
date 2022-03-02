@@ -19,6 +19,7 @@ const IamDev: NextPage = () => {
     return (
         <>
             <section className={styles.content}>
+                <canvas className={styles.canvas} id='nodes' width='500' height='500'></canvas>
                 <div className={styles.left}>
                     <h4>Hi,</h4>
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
