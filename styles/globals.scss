@@ -9,7 +9,7 @@
   --primary-color: #FFAF31;
   --primary-color-700: #fac267;
   --primary-color-500: #fad9a4;
-
+  --neutral-color: #2343D0;
   --secodary-text-color: #18191C;
 
 }
@@ -61,7 +61,7 @@ a {
   }
 }
 
-.github-corner{
+.github-corner {
   position: fixed;
   top: 0;
   right: 0;
@@ -72,26 +72,26 @@ a {
   animation: octocat-wave 560ms ease-in-out
 }
 
-.lightbox-image-pager{
-  img{
-    &:hover{
+.lightbox-image-pager {
+  img {
+    &:hover {
       cursor: pointer;
     }
   }
 
- &:after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% + 20px);
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  z-index: -1;
-  filter: blur(5px);
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 20px);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    filter: blur(5px);
 
- }
+  }
 }
 
 @keyframes octocat-wave {

@@ -1,0 +1,15 @@
+.inputSearch {
+    padding: 0 1rem;
+    line-height: 3rem;
+    min-width: 25rem;
+    outline: none;
+    border: solid 1px transparent;
+    transition: filter .2s ease-in-out, outline .2s ease-in-out, border .2s ease-in-out;
+    
+    &:focus {
+        background-color: #FFF;
+        filter: brightness(90%);
+        border: solid 1px var(--primary-color-700);
+        outline: solid 0.23rem #999;
+    }
+}
