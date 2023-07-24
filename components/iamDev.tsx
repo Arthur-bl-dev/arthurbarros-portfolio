@@ -22,7 +22,6 @@ const IamDev: NextPage = () => {
                 <canvas className={styles.canvas} id='nodes' width='500' height='500'></canvas>
                 <div className={styles.left}>
                     <h4>Hi,</h4>
-                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                     <h1>I’m Arthur,</h1>
                     <h1>Front-end developer</h1>
                     <p>Creative and self-starting Front-End Developer with 3 years experience building stable websites and apps, collaborative environments.</p>

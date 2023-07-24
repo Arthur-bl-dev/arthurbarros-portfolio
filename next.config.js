@@ -7,7 +7,7 @@ const withImages = require('next-images')
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['via.placeholder.com']
+    domains: ['via.placeholder.com', 'pessoal-arthur.s3.amazonaws.com']
   }
 }
 

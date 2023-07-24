@@ -14,18 +14,19 @@
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
+    max-width: 550px;
 
-    span{
+    span {
         width: 100% !important;
         //outline: solid .5rem var(--secondary-color);
         //border: solid .5rem var(--secondary-color) !important;
         z-index: 0;
     }
-    
+
 }
 
 .right {
-   
+
     flex: 1;
 
     h1 {
@@ -45,14 +46,14 @@
     }
 }
 
-.contentAnimationAboutMe{
+.contentAnimationAboutMe {
     position: absolute;
     width: calc(100% + 2rem);
     height: calc(100% + 2rem);
     z-index: -1;
     left: -1rem;
     top: -1rem;
-    
+
 }
 
 
@@ -71,12 +72,13 @@
 @media (min-width: 801px) {
 
     /* tablet, landscape iPad, lo-res laptops ands desktops */
-    
+
 }
 
 @media (min-width: 1025px) {
+
     /* big landscape tablets, laptops, and desktops */
-    .contentAboutMe{
+    .contentAboutMe {
         flex-direction: row;
     }
 }

@@ -37,34 +37,14 @@ const listProjects: ImagesListType = [
         alt: 'SuperGeeks - This time a static page for your trade networks of franchise',
     },
     {
-        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+        src: '/images/projects/CRM_SprintHub.png',
         loading: 'lazy',
-        alt: 'Under Construction',
+        alt: 'SprintHub: CRM - SprintHub is an All-in-One Marketing/Service/Sales platform that integrates various tools for lead attraction, marketing automation, omnichannel service, sales, social media management and advertising, and much more'
     },
     {
-        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+        src: '/images/projects/SAC_ominichannel_SprintHub.png',
         loading: 'lazy',
-        alt: 'Under Construction',
-    },
-    {
-        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-        loading: 'lazy',
-        alt: 'Under Construction',
-    },
-    {
-        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-        loading: 'lazy',
-        alt: 'Under Construction',
-    },
-    {
-        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-        loading: 'lazy',
-        alt: 'Under Construction',
-    },
-    {
-        src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-        alt: 'Under Construction',
-        loading: 'lazy',
+        alt: 'SprintHub: SAC Omnichannel - SprintHub is an All-in-One Marketing/Service/Sales platform that integrates various tools for lead attraction, marketing automation, omnichannel service, sales, social media management and advertising, and much more'
     },
 ]
 
@@ -83,22 +63,10 @@ const MyPortfolio: NextPage = () => {
             src: '/images/projects/cape_LP_Example_3.png',
         },
         {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+            src: '/images/projects/cape_sprinthub_RGB.png',
         },
         {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-        },
-        {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-        },
-        {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-        },
-        {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
-        },
-        {
-            src: 'https://via.placeholder.com/1920x2916/18191c/9c9e9e.jpeg?text=Under+construction',
+            src: '/images/projects/cape_sprinthub_RGB.png',
         },
     ])
 
