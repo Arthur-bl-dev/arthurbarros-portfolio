@@ -1,13 +1,15 @@
-import { NextPage } from 'next'
+import { useTranslation } from "react-i18next";
+import styles from "./../styles/footer.module.scss";
 
-import styles from './../styles/footer.module.scss'
-
-const Footer: NextPage = () => {
-    return (
-        <section className={styles.contentFooter}>
-            <p>Designed & built with ❤️  <span>by Arthur Barros</span> </p>
-        </section>
-    )
-}
+const Footer = () => {
+ const { t } = useTranslation();
+ return (
+  <section className={styles.contentFooter}>
+   <p>
+    {t("Designed & built with")} ❤️ <span>{t("by")} Arthur Barros</span>
+   </p>
+  </section>
+ );
+};
 
 export default Footer;
