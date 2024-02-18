@@ -8,19 +8,6 @@ import { useTranslation } from "react-i18next";
 import styles from "./../styles/myPortFolio.module.scss";
 import BackgroundTextContent from "./backgroundTextContent";
 
-//import { url } from 'inspector'
-
-interface PropsHeader {
- data: {
-  src: string;
-  alt: string;
-  caption: string;
-  width: number;
-  height: number;
-  loading: string;
- }[];
-}
-
 const MyPortfolio: NextPage = () => {
  const { t } = useTranslation();
  const [currentImageIndex, setCurrentIndex] = useState(-1);
@@ -107,7 +94,7 @@ const MyPortfolio: NextPage = () => {
 
  const gotoNext = useCallback(() => {
   currentImageIndex + 1 < listProjects.length && setCurrentIndex(currentImageIndex + 1);
- }, [currentImageIndex]);
+ }, [currentImageIndex, listProjects]);
 
  const Header: NextPage = useCallback(() => {
   let data = listProjects[currentImageIndex];
@@ -124,7 +111,7 @@ const MyPortfolio: NextPage = () => {
     </div>
    </header>
   );
- }, [currentImageIndex]);
+ }, [currentImageIndex, listProjects]);
 
  return (
   <>
