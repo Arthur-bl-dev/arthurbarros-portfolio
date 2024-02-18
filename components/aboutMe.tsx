@@ -1,72 +1,73 @@
-import Image from "next/image";
-import Lottie from "react-lottie";
-import { useMemo, useRef } from "react";
-import { Icon } from "@iconify/react";
-import { useTranslation } from "react-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Image from 'next/image'
+import Lottie from 'react-lottie'
+import { NextPage } from 'next'
+import { useRef } from 'react'
+import { Icon } from '@iconify/react'
 
-import * as animationData from "../public/animations/geometric_loop_background.json";
-import styles from "./../styles/aboutMe.module.scss";
-import buttons from "./../styles/components/buttons.module.scss";
-import BackgroundTextContent from "./backgroundTextContent";
+import * as animationData from '../public/animations/geometric_loop_background.json'
+import styles from './../styles/aboutMe.module.scss'
+import buttons from './../styles/components/buttons.module.scss'
+import BackgroundTextContent from './backgroundTextContent'
+import Link from 'next/link'
 
-const myName = "Arthur Barros"; // your name
+const AboutMe: NextPage = () => {
 
-const AboutMe = () => {
- const { t } = useTranslation();
- const defaultOptions = useRef({
-  loop: true,
-  autoplay: true,
-  animationData: animationData,
-  rendererSettings: {
-   preserveAspectRatio: "xMidYMid slice",
-  },
- });
+    const defaultOptions = useRef({
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        },
+    });
 
- const myAge = useMemo(() => {
-  const birthDate = new Date("1995-07-06"); // your birth date
-  const currentDate = new Date();
-  const age = currentDate.getFullYear() - birthDate.getFullYear();
-  const month = currentDate.getMonth() - birthDate.getMonth();
 
-  if (month < 0 || (month === 0 && currentDate.getDate() < birthDate.getDate())) {
-   return age - 1;
-  }
-  return age;
- }, []);
+    return (
+        <>
+            <section className={styles.contentAboutMe}>
 
- return (
-  <>
-   <section className={styles.contentAboutMe}>
-    <div className={styles.left}>
-     <Image src="/images/iam/1.jpg" alt="Arthur" width={550} height={550} />
 
-     <div className={styles.contentAnimationAboutMe}>
-      <Lottie
-       options={defaultOptions.current}
-       height="100% "
-       width="100%"
-       isClickToPauseDisabled={true}
-       speed={0.35}
-      />
-     </div>
-    </div>
-    <div className={styles.right}>
-     <h1>{t("About me")}</h1>
-     <p>
-      {t("My name is")} {myName}, {t("I am")} {myAge} {t("text_continue_aboutMe")}
-     </p>
+                <div className={styles.left}>
+                    <Image src="/images/iam/1.jpg" alt="Arthur" width={550} height={550} />
 
-     <a href="/docs/CV.pdf" download="CV.pdf" title="Download CV" target="_blank" rel="noreferrer">
-      <button className={buttons.primary}>
-       {t("Download CV")} <Icon color="#1e1f23" icon="akar-icons:download" />
-      </button>
-     </a>
-    </div>
-    <BackgroundTextContent position="top right" title={t("I am - back")} />
-   </section>
-  </>
- );
-};
+                    <div className={styles.contentAnimationAboutMe}>
+                        <Lottie
+                            options={defaultOptions.current}
+                            height={'100% '}
+                            width={'100%'}
+                            isClickToPauseDisabled={true}
+                            speed={0.35}
+                        />
+                    </div>
+                </div>
+                <div className={styles.right}>
+
+                    <h1>About me</h1>
+                    <p>
+                        My name is Arthur Barros, I am 28 years old and I live in the city of Juazeiro do Norte,
+                        state of Ceará - Brazil. I am married and a great enthusiast of technology.
+                        Since my adolescence, I dedicate all my free time to studies related to technology and programming.
+                        Throughout my study process, I had the opportunity to learn about different subjects, but
+                        it was when I discovered my passion for Front-end Development and Interface Design that
+                        I really found myself. Since then, I have developed several projects with national companies
+                        along with incredible people, always seeking to improve my skills and knowledge.
+                        My passion for technology and programming is what motivates me to continue learning and growing in my career.
+                    </p>
+
+                    <a
+                        href='/docs/CV.pdf'
+                        download="CV.pdf"
+                        title='Download CV'
+                        target='_blank' rel="noreferrer" >
+                        <button className={buttons.primary}>Download CV <Icon color='#1e1f23' icon="akar-icons:download" /></button>
+                    </a>
+
+
+                </div>
+                <BackgroundTextContent position="top right" title="I’m" />
+            </section>
+        </>
+    )
+}
 
 export default AboutMe;
