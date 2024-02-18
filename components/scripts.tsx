@@ -6,8 +6,6 @@ const Scripts: NextPage = () => {
  return (
   <>
    <Script id="canvas" src="/js/particles.js" />
-   <Script async src="https://www.googletagmanager.com/gtag/js?id=G-27STCTR7TB" />
-   <Script id="canvas" src="/js/gtag.js" />
    <Head>
     <title>Arthur Barros - Front End Developer</title>
     <meta
